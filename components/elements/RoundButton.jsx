@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styled from 'styled-components';
 const Button = styled.button`
   transition: all 0.2s ease-in-out;

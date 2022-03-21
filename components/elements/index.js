@@ -1,2 +1,3 @@
 import RoundButton from './RoundButton';
-export { RoundButton };
+import Button from './Button';
+export { RoundButton, Button };
