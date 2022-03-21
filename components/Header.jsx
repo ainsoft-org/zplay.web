@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from '../config/style.config';
+import { Search } from 'react-feather';
+import { RoundButton } from './elements';
 
 const Container = styled.div`
   padding: 20px 64px;
@@ -64,7 +66,11 @@ const Header = () => {
           </Link>
         </Item>
       </Menu>
-      <RightSide></RightSide>
+      <RightSide>
+        <RoundButton bg={theme.colors.black}>
+          <Search color={theme.colors.white} size={20} />
+        </RoundButton>
+      </RightSide>
     </Container>
   );
 };
