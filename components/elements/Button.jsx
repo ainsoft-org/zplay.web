@@ -12,6 +12,10 @@ const ButtonWarapper = styled.button`
     transition: all 0.2s linear;
     background: #000;
   }
+  &:active {
+    transition: all 0.2s linear;
+    background: ${theme.colors.secondary};
+  }
 `;
 
 const Button = ({ children }) => {
