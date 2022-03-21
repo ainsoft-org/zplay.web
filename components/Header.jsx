@@ -78,9 +78,13 @@ const Header = () => {
         <RoundButton bg={theme.colors.white}>
           <Search color={theme.colors.white} size={20} />
         </RoundButton>
-        <RoundButton bg={theme.colors.white}>
-          <User color={theme.colors.white} size={20} />
-        </RoundButton>
+        <Link href="/login">
+          <a>
+            <RoundButton bg={theme.colors.white}>
+              <User color={theme.colors.white} size={20} />
+            </RoundButton>
+          </a>
+        </Link>
       </RightSide>
     </Container>
   );
