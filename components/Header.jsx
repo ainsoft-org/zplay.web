@@ -75,10 +75,10 @@ const Header = () => {
         </Item>
       </Menu>
       <RightSide>
-        <RoundButton bg={theme.colors.black}>
+        <RoundButton bg={theme.colors.white}>
           <Search color={theme.colors.white} size={20} />
         </RoundButton>
-        <RoundButton bg={theme.colors.black}>
+        <RoundButton bg={theme.colors.white}>
           <User color={theme.colors.white} size={20} />
         </RoundButton>
       </RightSide>
