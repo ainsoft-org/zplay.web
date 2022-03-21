@@ -1,11 +1,15 @@
 import Header from '../components/Header';
-import '../styles/globals.css';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, theme } from '../config/style.config';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
