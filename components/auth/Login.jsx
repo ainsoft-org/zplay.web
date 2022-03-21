@@ -9,7 +9,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/banner.jpg');
   height: 90vh;
 `;
 
@@ -25,14 +26,21 @@ const Description = styled.p`
 `;
 
 const Input = styled.input`
-  padding: 10px;
+  padding: 16px 12px;
   display: block;
   width: 100%;
   outline: none;
   margin: 10px 0;
   border: none;
+  border: 2px solid ${theme.colors.black};
   background: ${theme.colors.black};
   color: ${theme.colors.white};
+  &:hover,
+  &:focus,
+  &:active {
+    transition: all 0.2s linear;
+    border-bottom-color: ${theme.colors.primary};
+  }
 `;
 const Label = styled.label``;
 const Error = styled.div`

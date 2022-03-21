@@ -7,7 +7,7 @@ import { RoundButton } from './elements';
 
 const Container = styled.div`
   padding: 20px 64px;
-  background-color: ${theme.colors.primary};
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,18 +16,21 @@ const Container = styled.div`
 const Logo = styled.h2`
   flex: 1;
   font-size: 24px;
+  color: ${theme.colors.primary};
 `;
 const Menu = styled.div`
   flex: 8;
   display: flex;
 `;
 const Item = styled.div`
+  transition: all 0.2s linear;
   padding: 0 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
   &:hover {
-    color: #fff;
+    transition: all 0.2s linear;
+    color: ${theme.colors.primary};
   }
 `;
 const RightSide = styled.div`
