@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from '../config/style.config';
-import { Search } from 'react-feather';
+import { Search, User } from 'react-feather';
 import { RoundButton } from './elements';
 
 const Container = styled.div`
@@ -31,6 +31,7 @@ const Item = styled.div`
   }
 `;
 const RightSide = styled.div`
+  display: flex;
   flex: 1;
   text-align: right;
 `;
@@ -69,6 +70,9 @@ const Header = () => {
       <RightSide>
         <RoundButton bg={theme.colors.black}>
           <Search color={theme.colors.white} size={20} />
+        </RoundButton>
+        <RoundButton bg={theme.colors.black}>
+          <User color={theme.colors.white} size={20} />
         </RoundButton>
       </RightSide>
     </Container>

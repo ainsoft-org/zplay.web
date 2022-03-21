@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Login } from '../components/';
+import { Login } from '../components';
 
 export default function Home() {
   return (
