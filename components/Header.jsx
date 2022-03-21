@@ -39,7 +39,11 @@ const RightSide = styled.div`
 const Header = () => {
   return (
     <Container>
-      <Logo>ZPlay</Logo>
+      <Logo>
+        <Link href={'/'}>
+          <a>ZPlay</a>
+        </Link>
+      </Logo>
       <Menu>
         <Item>
           <Link href="#">
