@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 import { theme } from '../config/style.config';
 
@@ -20,12 +21,14 @@ const Menu = styled.div`
 `;
 const Item = styled.div`
   padding: 0 10px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   &:hover {
     color: #fff;
   }
 `;
-const Login = styled.div`
+const RightSide = styled.div`
   flex: 1;
   text-align: right;
 `;
@@ -35,11 +38,33 @@ const Header = () => {
     <Container>
       <Logo>ZPlay</Logo>
       <Menu>
-        <Item>Home</Item>
-        <Item>Browse</Item>
-        <Item>TV Channels</Item>
+        <Item>
+          <Link href="#">
+            <a>Home</a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="#">
+            <a>Movies</a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="#">
+            <a>TV Series</a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="#">
+            <a>Cartoons</a>
+          </Link>
+        </Item>
+        <Item>
+          <Link href="#">
+            <a>FAQ</a>
+          </Link>
+        </Item>
       </Menu>
-      <Login>Login</Login>
+      <RightSide></RightSide>
     </Container>
   );
 };
