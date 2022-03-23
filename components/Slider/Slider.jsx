@@ -4,12 +4,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 import styled from 'styled-components';
-import RoundButton from '../elements/RoundButton';
 import { Play } from 'react-feather';
-import { theme } from '../../config/style.config';
 import Button from '../elements/Button';
 
-const Container = styled.div``;
 const Item = styled.div`
   display: flex;
   min-height: 64vh;
@@ -36,38 +33,50 @@ const Item = styled.div`
 
 const Slider = () => {
   return (
-    <Container>
-      <Carousel>
-        <Item>
+    <Carousel>
+      <Item>
+        <div>
+          <Image
+            src={'/assets/3.jpeg'}
+            alt={'drive'}
+            width={200}
+            height={320}
+          />
+        </div>
+        <div>
+          <h1>Legends Never Die</h1>
+          <p>ZPlay Series</p>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
           <div>
-            <Image
-              src={'/assets/1.jpeg'}
-              alt={'drive'}
-              width={200}
-              height={320}
-            />
+            <Button>
+              <Play size={20} />
+              <p>Watch now</p>
+            </Button>
           </div>
+        </div>
+      </Item>
+      <Item>
+        <div>
+          <Image
+            src={'/assets/2.jpeg'}
+            alt={'drive'}
+            width={200}
+            height={320}
+          />
+        </div>
+        <div>
+          <h1>Legend never Die</h1>
+          <p>ZPlay Series</p>
+          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
           <div>
-            <h1>Legend never Die</h1>
-            <p>ZPlay Series</p>
-            <p>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            </p>
-            <div>
-              <Button>
-                <Play size={20} />
-                <p>Watch now</p>
-              </Button>
-            </div>
+            <Button>
+              <Play size={20} />
+              <p>Watch now</p>
+            </Button>
           </div>
-        </Item>
-        <Item></Item>
-        <Item></Item>
-        <Item></Item>
-        <Item></Item>
-        <Item></Item>
-      </Carousel>
-    </Container>
+        </div>
+      </Item>
+    </Carousel>
   );
 };
 
