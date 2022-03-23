@@ -6,6 +6,9 @@ const ButtonWarapper = styled.button`
   transition: all 0.2s linear;
   border: none;
   padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   color: ${theme.colors.white};
   background: ${theme.colors.primary};
   &:hover {
