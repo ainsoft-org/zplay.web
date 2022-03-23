@@ -33,7 +33,16 @@ const Item = styled.div`
 
 const Slider = () => {
   return (
-    <Carousel>
+    <Carousel
+      showStatus={false}
+      autoPlay={true}
+      showArrows={true}
+      showIndicators={true}
+      infiniteLoop={true}
+      useKeyboardArrows={true}
+      stopOnHover={true}
+      swipeable={true}
+    >
       <Item>
         <div>
           <Image
