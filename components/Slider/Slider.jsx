@@ -42,6 +42,9 @@ const Slider = () => {
       useKeyboardArrows={true}
       stopOnHover={true}
       swipeable={true}
+      interval={2000}
+      transitionTime={500}
+      swipeScrollTolerance={5}
     >
       <Item>
         <div>
